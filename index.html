@@ -20,7 +20,7 @@
         "assets/img/eggly-logo.png"></a>
 
         <ul class="nav nav-sidebar">
-          <li data-ng-repeat="category in main.categories" ng-class="{'active':main.isCurrentCategory(category)}">
+          <li data-ng-repeat="category in main.categories" ng-class="{'active':main.isCurrentCategory(category\)}">
             <a href="#" ng-click="main.setCurrentCategory(category)">{{ category.name }}</a>
           </li>
         </ul>
