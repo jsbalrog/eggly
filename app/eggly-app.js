@@ -74,4 +74,14 @@ angular.module('Eggly', []).controller('MainCtrl', function($scope) {
     this.bookmarks.push(bookmark);
     this.resetCreateForm();
   };
+
+  this.editedBookmark = null;
+
+  this.setEditedBookmark = function(bookmark) {
+    this.editedBookmark = angular.copy(bookmark);
+  };
+
+  this.updateBookmark = function(bookmark) {
+
+  };
 });
